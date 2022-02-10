@@ -1,0 +1,21 @@
+If you want to define the SWPACINFO by yourself,
+please Refer to the following modifications.
+Take sharkl3 native project as a example.
+
+PATH: device/sprd/sharkl3/s9863a1h10
+
+diff --git a/s9863a1h10/s9863a1h10_Natv.mk b/s9863a1h10/s9863a1h10_Natv.mk
+index a336d53..1e87252 100644
+--- a/s9863a1h10/s9863a1h10_Natv.mk
++++ b/s9863a1h10/s9863a1h10_Natv.mk
+@@ -23,6 +23,7 @@ PLATCOMM := $(PLATDIR)/common
+ ROOTDIR := $(BOARDDIR)/rootdir
+ TARGET_BOARD_PLATFORM := sp9863a
+ TARGET_GPU_PLATFORM := rogue
++SWPACINFO := "Unisoc: sp9863a_1h10_xxx"
+
+ TARGET_BOOTLOADER_BOARD_NAME := sp9863a_1h10
+ CHIPRAM_DEFCONFIG := sp9863a_1h10
+
+
+
